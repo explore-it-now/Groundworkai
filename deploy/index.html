@@ -6,18 +6,18 @@
 <meta name="color-scheme" content="light only" />
 <meta name="theme-color" content="#F1ECE2" />
 <meta name="supported-color-schemes" content="light" />
-<meta name="description" content="GroundworkAI turns your idea into a real, clickable prototype and a build-ready plan — in days, not months." />
+<meta name="description" content="GroundworkAI is an AI prototyping studio. We turn your idea into a real, clickable AI prototype and a build-ready plan in days — so businesses, agencies, consultancies and founders can test, demo and validate before committing to a full build." />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="GroundworkAI" />
-<meta property="og:title" content="GroundworkAI — Idea to Blueprint" />
-<meta property="og:description" content="A real, clickable version of your app or website in days — plus the plan your developers can build from." />
-<meta property="og:url" content="https://gilded-lebkuchen-d0ad29.netlify.app/" />
-<meta property="og:image" content="https://gilded-lebkuchen-d0ad29.netlify.app/og.png" />
+<meta property="og:title" content="GroundworkAI — AI Prototyping &amp; Validation Studio" />
+<meta property="og:description" content="A real, clickable AI prototype of your idea in days — plus the plan your developers can build from. Test it with users, show clients or stakeholders, and validate before you build." />
+<meta property="og:url" content="https://groundworksai.netlify.app/" />
+<meta property="og:image" content="https://groundworksai.netlify.app/og.png" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="GroundworkAI — Idea to Blueprint" />
-<meta name="twitter:description" content="A real, clickable version of your app or website in days — plus the plan your developers can build from." />
-<meta name="twitter:image" content="https://gilded-lebkuchen-d0ad29.netlify.app/og.png" />
-<title>GroundworkAI — Idea to Blueprint</title>
+<meta name="twitter:title" content="GroundworkAI — AI Prototyping &amp; Validation Studio" />
+<meta name="twitter:description" content="A real, clickable AI prototype of your idea in days — plus the plan your developers can build from. Test it with users, show clients or stakeholders, and validate before you build." />
+<meta name="twitter:image" content="https://groundworksai.netlify.app/og.png" />
+<title>GroundworkAI — AI Prototyping &amp; Validation Studio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -511,6 +511,22 @@
     .tier, .pl-card, .btn { transition: none; }
     .btn:hover::before { animation: none; }
   }
+
+  /* ---------- audience / examples / add-on blocks ---------- */
+  .chip-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+  .chip-row span { font-size: 14px; font-weight: 600; color: var(--ink); background: #fff; border: 1px solid var(--line); padding: 10px 16px; border-radius: 100px; transition: transform .18s, box-shadow .18s, border-color .18s; }
+  @media (hover: hover){ .chip-row span:hover { transform: translateY(-2px); border-color: var(--blue); box-shadow: 0 10px 24px -12px rgba(36,51,204,.5); } }
+  body.mood-noir .chip-row span { background: #202028; }
+  .examples-note { margin-top: 24px; font-size: 16px; color: var(--ink-2); max-width: 60ch; }
+  .examples-note b { color: var(--ink); font-weight: 700; }
+  .panel p { font-size: 15px; color: var(--ink-2); }
+  .addon { margin-top: 26px; display: flex; gap: 18px; align-items: flex-start; background: #fff; border: 1px dashed var(--line); border-radius: 18px; padding: 22px 26px; }
+  .addon .ad-ic { flex-shrink: 0; width: 42px; height: 42px; border-radius: 12px; background: var(--blue-soft); color: var(--blue-ink); display: flex; align-items: center; justify-content: center; }
+  .addon .ad-ic svg { width: 20px; height: 20px; }
+  .addon .ad-k { font-size: 11.5px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--blue-ink); }
+  .addon .ad-t { font-family: var(--serif); font-size: 23px; margin: 4px 0 7px; line-height: 1.12; }
+  .addon p { font-size: 14.5px; color: var(--ink-2); max-width: 64ch; }
+  body.mood-noir .addon { background: #202028; }
 </style>
 </head>
 <body>
@@ -546,7 +562,7 @@
     <div class="logo"><div class="mark" aria-hidden="true"><span></span><span></span><span></span></div><b>GroundworkAI</b></div>
     <div class="nav-links">
       <a href="#why">Why us</a>
-      <a href="#process">Process</a>
+      <a href="#who">Who we help</a>
       <a href="#services">Services</a>
       <a href="#work">Portfolio</a>
       <a href="#contact" class="btn">Book a free call</a>
@@ -561,12 +577,12 @@
       <div class="hero-text">
         <span class="eyebrow reveal">AI prototype studio · idea in, working demo out</span>
         <h1 class="serif reveal d1">We build a working <i>AI prototype</i> of your idea — in days.</h1>
-        <p class="sub reveal d2">Give us the idea for an app, website, platform or internal tool. You get back a real, clickable product with the <i style="font-style:normal;font-weight:700;color:var(--ink)">AI actually running inside it</i> — plus a build-ready plan for developers. Use it to sell, validate or get sign-off <i style="font-style:normal;font-weight:700;color:var(--ink)">before</i> you pay for a full build.</p>
+        <p class="sub reveal d2">Give us the idea for an app, website, platform or internal tool. You get back a real, clickable product with the <i style="font-style:normal;font-weight:700;color:var(--ink)">AI running inside it</i> — live where it matters, realistically simulated where that's the smart way to prove it — plus a build-ready plan for developers. Test it with users, show clients or stakeholders, and get sign-off <i style="font-style:normal;font-weight:700;color:var(--ink)">before</i> you pay for a full build.</p>
         <div class="hero-cta reveal d3">
-          <a href="#contact" class="btn lg">Book a free 30-min call <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="#contact" class="btn lg">Book a free 15-min Prototype Fit Call <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           <a href="#process" class="ghost-link">See how it works</a>
         </div>
-        <p class="free-note reveal d3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg> No commitment · 30 minutes · completely free</p>
+        <p class="free-note reveal d3"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg> No commitment · 15 minutes · completely free</p>
       </div>
       <div class="hero-visual reveal d2" data-par="0.07" aria-hidden="true">
         <div class="morph-phone">
@@ -602,23 +618,23 @@
 <section class="band">
   <div class="wrap">
     <span class="sec-label reveal">The problem</span>
-    <p class="big serif reveal d1">Everyone is being asked to show what AI will do for the business. Nobody can afford to build it just to find out. So ideas stall — stuck between <i>a paragraph</i> and a <i>£100k engineering bill</i>.</p>
+    <p class="big serif reveal d1">Everyone is being asked to show what AI will do for the business. Nobody can afford to build it just to find out. So promising ideas stall — stuck between <i>a paragraph</i>, <i>a slide deck</i> and the cost of committing to a full build.</p>
   </div>
 </section>
 
 <!-- compare: the old way vs the Groundwork way -->
 <section id="why">
   <div class="wrap">
-    <span class="sec-label reveal">Why founders choose us</span>
+    <span class="sec-label reveal">Why businesses choose GroundworkAI</span>
     <h2 class="sec-h serif reveal d1">The old way burns money. <i>We flip it.</i></h2>
     <div class="compare">
       <div class="cmp old reveal">
         <span class="cmp-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px"><path d="M12 8v4M12 16h.01M12 3a9 9 0 100 18 9 9 0 000-18z"/></svg>The old way</span>
         <h3 class="serif">Build first. Hope it works.</h3>
         <ul>
-          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span><div><b>Spend £30k–£100k upfront</b><span>Hire developers before you know it works.</span></div></li>
-          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span><div><b>Wait 6–12 months</b><span>Months of building before anyone sees it.</span></div></li>
-          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span><div><b>Nothing to test or pitch</b><span>No way to show users or investors early.</span></div></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span><div><b>Spend tens of thousands upfront</b><span>Hire developers before you know it works.</span></div></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span><div><b>Wait months for a result</b><span>Months of building before anyone sees it.</span></div></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span><div><b>Nothing to test or show</b><span>No way to put it in front of clients, users or stakeholders early.</span></div></li>
           <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></span><div><b>Find the flaws too late</b><span>Discover what's wrong after you've paid for it.</span></div></li>
         </ul>
         <div class="cmp-foot">Big risk, before any proof.</div>
@@ -628,12 +644,29 @@
         <h3 class="serif">Prove it first. <i>Then build.</i></h3>
         <ul>
           <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><div><b>A real, clickable version in days</b><span>Hold it, click it, feel it — fast.</span></div></li>
-          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><div><b>Test &amp; pitch immediately</b><span>Put it in front of users and investors now.</span></div></li>
+          <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><div><b>Test &amp; demo immediately</b><span>Put it in front of users, clients and stakeholders now.</span></div></li>
           <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><div><b>A build-ready blueprint</b><span>The exact plan any dev team can build from.</span></div></li>
           <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg></span><div><b>Spend big only when sure</b><span>Commit to the full build once it's proven.</span></div></li>
         </ul>
         <div class="cmp-foot">Real proof, <i>before</i> the big spend.</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- who we help -->
+<section id="who">
+  <div class="wrap">
+    <span class="sec-label reveal">Who we help</span>
+    <h2 class="sec-h serif reveal d1">Built for teams with an <i>AI idea to prove</i>.</h2>
+    <p class="sec-sub reveal d1">GroundworkAI works with businesses, consultancies, agencies, venture teams and founders who want to test an AI idea before committing to a full build.</p>
+    <div class="chip-row reveal d2">
+      <span>Client demos</span>
+      <span>Internal tools</span>
+      <span>AI workflows</span>
+      <span>New product ideas</span>
+      <span>White-label delivery</span>
+      <span>Prototype overflow</span>
     </div>
   </div>
 </section>
@@ -647,7 +680,7 @@
       <div class="step reveal">
         <div class="s-num serif">1</div>
         <h3 class="serif">Book a free call</h3>
-        <p>Tell us your idea in a 30-minute chat. No commitment, completely free.</p>
+        <p>Tell us your idea in a free 15-minute Prototype Fit Call. No commitment.</p>
         <svg class="s-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </div>
       <div class="step reveal d1">
@@ -658,8 +691,8 @@
       </div>
       <div class="step reveal d2">
         <div class="s-num serif">3</div>
-        <h3 class="serif">Test, pitch, build</h3>
-        <p>Show users and investors, then build for real — knowing it works, before you spend big.</p>
+        <h3 class="serif">Test, show, decide</h3>
+        <p>Test it with users, show clients or stakeholders, secure approval — then decide whether to build, knowing it works before you spend big.</p>
       </div>
     </div>
   </div>
@@ -698,7 +731,7 @@
       </article>
       <article class="pl-card" data-i="3">
         <div class="c-top"><span class="c-num serif">04</span><span class="c-ttl">Blueprint</span></div>
-        <div class="c-body"><p class="c-desc">The build plan any dev team can follow: every screen, the data model, the API, payments, integrations, legal flags, and a launch roadmap.</p>
+        <div class="c-body"><p class="c-desc">The developer-ready handover any dev team can follow: screens, user journeys, recommended data structures, API and integration requirements, implementation considerations, areas needing legal/compliance review, and a next-step roadmap.</p>
           <div class="ill blue"><div class="doc a"></div><div class="doc b"></div><div class="stamp">build-ready</div></div></div>
       </article>
     </div>
@@ -729,21 +762,30 @@
         <ul>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Everything in Spark</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Full hi-fi interactive prototype</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Live AI behaviour, every flow, edge cases</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Live or realistically simulated AI behaviour where appropriate</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>The key journeys and scenarios needed to prove the concept</li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Works on any device, no install</li>
         </ul>
       </div></div>
       <div class="tilt reveal d2"><div class="tier">
         <div class="t-name serif">Blueprint</div>
-        <div class="t-for">Ready to raise &amp; hand to developers.</div>
+        <div class="t-for">Ready to hand over, secure approval or move towards a build.</div>
         <div class="t-div"></div>
         <ul>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Everything in Prototype</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Full developer blueprint</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Data model, API, payments, legal flags</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Build roadmap &amp; store-launch plan</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Developer-ready handover pack</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Recommended data structures &amp; API/integration requirements</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>Implementation considerations &amp; next-step roadmap</li>
         </ul>
       </div></div>
+      <div class="addon reveal d2" style="grid-column:1/-1;">
+        <div class="ad-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l7 4v6c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <div>
+          <span class="ad-k">Optional add-on</span>
+          <div class="ad-t serif">Custom production build</div>
+          <p>If the prototype proves the idea, we can also help take it into production through a separately scoped, full-stack build. It's the next-step option once you're ready — not one of the three core prototyping packages above.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -780,8 +822,8 @@
 <section id="work">
   <div class="wrap">
     <span class="sec-label reveal">Portfolio</span>
-    <h2 class="sec-h serif reveal d1">See what we've <i>already built</i>.</h2>
-    <p class="sec-sub reveal d1">Real prototypes, not screenshots. Open one and click around — this is exactly what you'd get.</p>
+    <h2 class="sec-h serif reveal d1">See what's <i>possible</i>.</h2>
+    <p class="sec-sub reveal d1">From generative AI and marketplaces to multimodal experiences, our portfolio shows how very different ideas become interactive prototypes you can see, test and demonstrate. Real prototypes, not screenshots — open one and click around.</p>
     <div class="folio">
       <a class="fo reveal" href="https://cv-generator-five-iota.vercel.app/" target="_blank" rel="noopener">
         <div class="fo-shot"><div class="fo-doc"><i class="hd"></i><i class="ac"></i><i></i><i class="s"></i><div class="row"><i></i><i></i></div><i></i><i class="s"></i><i></i></div></div>
@@ -818,7 +860,7 @@
         <div class="fo-txt">
           <span class="fo-kind">Available now</span>
           <h3>Bring us a paragraph</h3>
-          <p>Whatever you're trying to prove — an AI assistant inside your product, an internal tool, a platform — it starts the same way: a 30-minute call, then days to something you can click.</p>
+          <p>Whatever you're trying to prove — an AI assistant inside your product, an internal tool, a platform — it starts the same way: a 15-minute Prototype Fit Call, then days to something you can click.</p>
           <a class="fo-open" href="#contact">Book a free call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </div>
@@ -827,11 +869,49 @@
   </div>
 </section>
 
+<!-- what could we prototype -->
+<section id="ideas" style="background:var(--paper-2);">
+  <div class="wrap">
+    <span class="sec-label reveal">What's possible</span>
+    <h2 class="sec-h serif reveal d1">What could we <i>prototype for you</i>?</h2>
+    <div class="chip-row reveal d1">
+      <span>AI document reviewer</span>
+      <span>Internal knowledge assistant</span>
+      <span>Customer enquiry agent</span>
+      <span>Site-reporting tool</span>
+      <span>Lead qualification workflow</span>
+      <span>Recommendation engine</span>
+      <span>AI intake assistant</span>
+      <span>Workflow automation interface</span>
+      <span>Client-facing AI feature</span>
+    </div>
+    <p class="examples-note reveal d2">If you can describe the problem in a paragraph, we can tell you whether it's <b>suitable for prototyping</b>.</p>
+  </div>
+</section>
+
+<!-- capability vs capacity -->
+<section id="engage">
+  <div class="wrap">
+    <span class="sec-label reveal">How we work with you</span>
+    <h2 class="sec-h serif reveal d1">Need <i>capability</i>, or <i>capacity</i>?</h2>
+    <div class="two">
+      <div class="panel yes reveal">
+        <h3 class="serif">Need capability?</h3>
+        <p>We can prototype something your team doesn't currently build — bringing an AI idea to life quickly, without hiring for a skill set you need only once.</p>
+      </div>
+      <div class="panel no reveal d1">
+        <h3 class="serif">Need capacity?</h3>
+        <p>We can work behind the scenes when your own team is already committed — extra delivery power, white-labelled where you want it, without adding headcount.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CTA -->
 <section id="contact" class="cta grid-bg">
   <div class="wrap" style="position:relative;z-index:1;">
     <h2 class="serif reveal">Have an idea?<br>Let's lay the <i>groundwork</i>.</h2>
-    <p class="reveal d1">Book a <i style="font-style:normal;font-weight:700;color:var(--ink)">free 30-minute discovery call</i> — no commitment. Tell us your idea and we'll show you how to make it real, fast.</p>
+    <p class="reveal d1">Book a <i style="font-style:normal;font-weight:700;color:var(--ink)">free 15-minute Prototype Fit Call</i> — no commitment. Tell us your idea and we'll show you how to make it real, fast.</p>
 
     <form class="form reveal d1" id="contactForm" novalidate>
       <div class="form-row">
@@ -861,7 +941,7 @@
         <a class="btn lg" href="https://calendar.app.google/M4juQLsZaoYYZ1LN7" target="_blank" rel="noopener">Book my free call <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         <button type="submit" name="intent" value="email" class="btn-alt lg"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9 6 9-6M4 5h16v14H4z"/></svg> Submit your query via email</button>
       </div>
-      <p class="form-note">No commitment · 30 minutes · completely free.</p>
+      <p class="form-note">No commitment · 15 minutes · completely free.</p>
     </form>
 
     <div class="form-ok" id="formOk">
@@ -1205,19 +1285,19 @@
         a:"We work in three tiers — <b>Spark</b> (validate the idea), <b>Prototype</b> (a full clickable app), and <b>Blueprint</b> (ready to hand to developers). Every project is scoped to the idea, so the best next step is a quick chat. Want me to take your details?",
         chips:['Start a project','What do I actually get?','Do you build the real app?'] },
       { id:'time', kw:['how long','time','days','weeks','fast','quick','when','timeline','turnaround'],
-        a:"Days, not months. A working prototype typically comes together in <b>days</b> — far faster than the 6–12 months a traditional build takes, because we prove the idea before any heavy engineering.",
+        a:"Days, not months. A working prototype typically comes together in <b>days</b> — far faster than the months a traditional build can take, because we prove the idea before any heavy engineering.",
         chips:['How much does it cost?','What do I actually get?'] },
       { id:'deliver', kw:['get','deliver','receive','included','what do i','output','hand','blueprint','prototype'],
-        a:"Depending on your tier: a <b>clickable prototype</b> (both sides of your app, every screen), a <b>brand &amp; design system</b>, and a <b>developer blueprint</b> — the data model, API, payments, legal flags and a launch roadmap. Everything a dev team needs to build it for real.",
+        a:"Depending on your tier: a <b>clickable prototype</b> (the key journeys, every screen that matters), a <b>brand &amp; design system</b>, and a <b>developer-ready handover</b> — recommended data structures, API and integration requirements, areas needing legal/compliance review, and a next-step roadmap. Everything a dev team needs to build it for real.",
         chips:['Do you build the real app?','See an example','Start a project'] },
       { id:'build', kw:['build the real','do you build','code','launch','app store','google play','backend','developer','engineers','publish'],
         a:"We design and <b>prove</b> the product — the prototype and the full build blueprint. The real backend, payments and store launch are done by a dev team, who build straight from our blueprint. Many clients hand it to their own developers or one we recommend.",
         chips:['What do I actually get?','How much does it cost?'] },
       { id:'example', kw:['example','work','portfolio','case','meetcreators','seen','show me','sample'],
-        a:"A founder came to us with one paragraph — connect local businesses with neighbourhood creators for video ads, with money held safely until the video's live. We turned it into <b>MeetCreators</b>: a 40+ screen clickable app, both sides, escrow and disputes, plus a 13-document blueprint. Scroll to <a href='#work'>Selected work</a> to see it.",
+        a:"A client came to us with one paragraph — connect local businesses with neighbourhood creators for video ads, with money held safely until the video's live. We turned it into <b>MeetCreators</b>: a 40+ screen clickable app, both sides, escrow and disputes, plus a developer-ready handover pack. Scroll to the <a href='#work'>portfolio</a> to see it.",
         chips:['Start a project','How long does it take?'] },
       { id:'start', kw:['start','begin','book','get started','contact','talk','call','email','reach','hire you','work with'],
-        a:"Brilliant. The best first step is a <b>free 30-minute discovery call</b> — no commitment. Pop your details in the <a href='#contact'>form below</a> and we'll set it up within one working day. Want me to scroll you there?",
+        a:"Brilliant. The best first step is a <b>free 15-minute Prototype Fit Call</b> — no commitment. Pop your details in the <a href='#contact'>form below</a> and we'll set it up within one working day. Want me to scroll you there?",
         chips:['Take me to the form','How much does it cost?'] },
       { id:'idea', kw:['my idea','i have an idea','i want to build','thinking of','can you help','would this work'],
         a:"Love it — that's exactly what we do. We take a one-paragraph idea and make it real enough to test and pitch. Tell me in a sentence what it does, or jump straight to the <a href='#contact'>brief form</a> and we'll take it from there.",
